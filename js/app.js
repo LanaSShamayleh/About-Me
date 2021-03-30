@@ -3,6 +3,8 @@
 
 'use strict';
 
+// First part - prompt and calling
+
 var userName = prompt('Hey😉 What is your name ?');
 
 alert('Welcome ' + userName + ' .This is My website 🙈 ,Lets we play a small game before to see this page!');
@@ -43,13 +45,13 @@ Qes7(Q7);
 
 Qes8();
 
-if (count < 4)
-  alert(`Thanks ${userName} for play with us , You was a great person and  you got ${count}/7 hope see you again `);
+if (count < 5)
+  alert(`Thanks ${userName} for play with us , You was a great person and  you got ${count}/8 hope see you again `);
 else
-  alert(`Thanks${userName} for play with us , You was a great person and you got ${count}/7, Congrats 😉`);
+  alert(`Thanks${userName} for play with us , You was a great person and you got ${count}/8, Congrats 😉`);
 
 
-//next
+//next part
 
 function Qes1(Q1) {
 
