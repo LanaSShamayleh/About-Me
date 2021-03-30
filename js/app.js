@@ -45,10 +45,13 @@ Qes7(Q7);
 
 Qes8();
 
+Qes9();
+
+
 if (count < 5)
-  alert(`Thanks ${userName} for play with us , You was a great person and  you got ${count}/8 hope see you again `);
+  alert(`Thanks ${userName} for play with us , You was a great person and  you got ${count}/9 hope see you again `);
 else
-  alert(`Thanks${userName} for play with us , You was a great person and you got ${count}/8, Congrats 😉`);
+  alert(`Thanks${userName} for play with us , You was a great person and you got ${count}/9, Congrats 😉`);
 
 
 //next part
@@ -195,7 +198,7 @@ function Qes8() {
       if (Q8Ans.toLowerCase() === Levels[j]) {
 
         alert(` Very Good 😉. This is a Correct Answer,See all correct answers about my levels \n ('  ${Levels} ') .`);
-        console.log('Your Anwer in question (8) is  Correct , we finished 😋');
+        console.log('Your Anwer in question (8) is  Correct ');
         correct = true;
         count++;
         break;
@@ -212,3 +215,48 @@ function Qes8() {
   if (!correct)
     alert(`you didn't guess,the correct answer its any one code of this list\n (' ${Levels} ') ,hope see you again `);
 }
+
+// next
+
+
+function Qes9() {
+
+  var Array = ['try to guess my lucky number ( 1 and 10 )', 'If i would buy a car from my top-10 cars list, what color(s) would i like this car to be?'];
+
+  let n;
+  let answer;
+  for (n = 0; n < 6; n++) {
+
+    answer = prompt('' + userName + '! this is the last question,so ' + Array[0] + '.Note you have only ' + (5 - n) + 'attempts! ');
+    switch (answer) {
+    case '1':
+    case '2':
+    case '3':
+    case '4':
+      alert('too low!');
+      break;
+
+    case '5':
+    case '9':
+    case '10':
+
+      alert('too close!');
+      break;
+
+    case '6':
+    case '8':
+      alert('hmmmmm in between 😋!');
+      break;
+
+    case '7':
+      count++;
+      console.log('Your Anwer in question (8) is  Correct , we finished 😋');
+      break;
+
+    default:
+      alert('Please pick a number from the range ( 1 to 10 ) only');
+    }
+
+  }
+}
+
