@@ -221,7 +221,7 @@ function Qes8() {
 
 function Qes9() {
 
-  var Array = ['try to guess my lucky number ( 1 and 10 )', 'If i would buy a car from my top-10 cars list, what color(s) would i like this car to be?'];
+  var Array = ['try to guess my lucky number ( 1 and 10 )', 'If i would to change one my hobbies, which one would i change it?'];
 
   let n;
   let answer;
@@ -250,9 +250,8 @@ function Qes9() {
 
     case '7':
       count++;
-      console.log('Your Anwer in question (8) is  Correct , we finished 😋');
+      console.log('Your Anwer in question (9) is  Correct , we finished 😋');
       break;
-
     default:
       alert('Please pick a number from the range ( 1 to 10 ) only');
     }
