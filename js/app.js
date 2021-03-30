@@ -41,7 +41,7 @@ var Q7= prompt('Do you think my website is need to update ⌨ ? Your Answer must
 
 Qes7(Q7);
 
-if (count < 7)
+if (count < 4)
   alert(`Thanks ${userName} for play with us , You was a great person and  you got ${count}/7 hope see you again `);
 else
   alert(`Thanks${userName} for play with us , You was a great person and you got ${count}/7, Congrats 😉`);
