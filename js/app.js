@@ -35,7 +35,7 @@ var Q5 = prompt('Do You think that a writing is one of my hobbies? Your Answer m
 Qes5(Q5);
 
 
-var Q6 = prompt('What is my favourite teacher in ASAC 😍😍? Do you think my favorite teacher is Mais Abdalrazeq!!consider it a bonus question, the answer is yes 😎😎😎 , but Your Answer must be (yes/no) or(y,n)😂 ');
+var Q6 = prompt('What is my teacher in ASAC 😍😍? Do you think my teacher is Mais Abdalrazeq !! haha consider it as a bonus question,so the answer is yes 😎😎😎 , but your Answer must be (yes/no) or(y,n)😂 ');
 
 Qes6(Q6);
 
