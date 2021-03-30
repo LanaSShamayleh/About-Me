@@ -28,11 +28,23 @@ var Q4= prompt('What is My Future Goals🤨? Do you think to be a Web Developer 
 
 Qes4(Q4);
 
+var Q5= prompt('Do You think that a writing is one of my hobbies? Your Answer must be (yes/no) or(y,n) ');
 
-if (count < 2)
-  alert('Thanks' + userName + ', for play with us , You was a great person and  you got \n ' + count + '/4 hope see you again  ');
+Qes5(Q5);
+
+
+var Q6= prompt('What is my favourite teacher in ASAC 😍😍? Do you think my favorite teacher is Mais Abdalrazeq!!consider it a bonus question, the answer is yes 😎😎😎 , but Your Answer must be (yes/no) or(y,n)😂 ');
+
+Qes6(Q6);
+
+var Q7= prompt('Do you think my website is need to update ⌨ ? Your Answer must be (yes/no) or(y,n) ');
+
+Qes7(Q7);
+
+if (count < 7)
+  alert(`Thanks ${userName} for play with us , You was a great person and  you got ${count}/7 hope see you again `);
 else
-  alert('Thanks' + userName + ' ,for play with us , You was a great person and you got \n' + count + '/4 , Congrats 😉');
+  alert(`Thanks${userName} for play with us , You was a great person and you got ${count}/7, Congrats 😉`);
 
 
 //next
@@ -97,10 +109,55 @@ function Qes4(Q4) {
 
   if (Q4.toLowerCase() === 'yes' || Q4.toLowerCase() === 'y') {
     alert('Your Anwer is Correct  😎');
-    console.log('Your Anwer in question (4) is  Correct , we finished 😋');
+    console.log('Your Anwer in question (4) is  Correct');
     count++;
   }
   else if (Q4.toLowerCase() === 'no' || Q4.toLowerCase() === 'n') {
+
+    alert('Your Anwer is not Correct ');
+  }else {
+    alert('Your Answer must be (yes/no) or(y,n) ');
+  }
+}
+
+function Qes5(Q5) {
+
+  if (Q5.toLowerCase() === 'yes' || Q5.toLowerCase() === 'y') {
+    alert('Your Anwer is Correct  😎');
+    console.log('Your Anwer in question (5) is  Correct ');
+    count++;
+  }
+  else if (Q5.toLowerCase() === 'no' || Q5.toLowerCase() === 'n') {
+
+    alert('Your Anwer is not Correct ');
+  }else {
+    alert('Your Answer must be (yes/no) or(y,n) ');
+  }
+}
+
+function Qes6(Q6) {
+
+  if (Q6.toLowerCase() === 'yes' || Q6.toLowerCase() === 'y') {
+    alert('Your Anwer is Correct  😎');
+    console.log('Your Anwer in question (6) is  Correct ');
+    count++;
+  }
+  else if (Q6.toLowerCase() === 'no' || Q6.toLowerCase() === 'n') {
+
+    alert('Your Anwer is not Correct ');
+  }else {
+    alert('Your Answer must be (yes/no) or(y,n) ');
+  }
+}
+
+function Qes7(Q7) {
+
+  if (Q7.toLowerCase() === 'yes' || Q7.toLowerCase() === 'y') {
+    alert('Your Anwer is Correct  😎');
+    console.log('Your Anwer in question (7) is  Correct , we finished 😋');
+    count++;
+  }
+  else if (Q7.toLowerCase() === 'no' || Q7.toLowerCase() === 'n') {
 
     alert('Your Anwer is not Correct ');
   }else {
