@@ -4,7 +4,8 @@
 
 ## Project Name: ***About Me and guessing game***
 
->>- I build ***About Me and guessing game*** that let users know more fun information about me. The user must answer 8 questions about me. In the last question, you 6 attempts to answer correctly ,and each correct answer is granted with 1 points score.
+>>- I build ***About Me and guessing game*** that let users know more fun information about me. The user must answer 9 questions about me. In the last question, you 6 attempts to answer correctly ,and each correct answer is granted with 1 points score.
+>>- I have change the type of the questions both (8,9) ,and I used  function and declear some array to give more than one correct answer.
 >>
 >>- After completing the game, the user can read more information about me.
 >>
