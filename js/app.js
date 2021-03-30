@@ -227,7 +227,7 @@ function Qes9() {
   let answer;
   for (n = 0; n < 6; n++) {
 
-    answer = prompt('' + userName + '! this is the last question,so ' + Array[0] + '.Note you have only ' + (5 - n) + 'attempts! ');
+    answer = prompt('Hey' + userName + '! this is the last question,so ' + Array[0] + '.Note you have only 6 attempts! ');
     switch (answer) {
     case '1':
     case '2':
@@ -251,6 +251,7 @@ function Qes9() {
     case '7':
       count++;
       console.log('Your Anwer in question (9) is  Correct , we finished 😋');
+      n = 7;
       break;
     default:
       alert('Please pick a number from the range ( 1 to 10 ) only');
