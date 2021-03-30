@@ -9,7 +9,7 @@ alert('Welcome ' + userName + ' .This is My website 🙈 ,Lets we play a small g
 
 let count = 0;
 
-var Q1= prompt('Are my age is 24 years old? Your Answer must be (yes/no) or(y,n) ');
+var Q1 = prompt('Are my age is 24 years old? Your Answer must be (yes/no) or(y,n) ');
 
 Qes1(Q1);
 
@@ -18,28 +18,30 @@ var Q2 = prompt(' What is my major🤨? Do you think it is the communication eng
 Qes2(Q2);
 
 
-var Q3= prompt(' Do you think the winter is my season 🌨 ?Your Answer must be (yes/no) or(y,n) ');
+var Q3 = prompt(' Do you think the winter is my season 🌨 ?Your Answer must be (yes/no) or(y,n) ');
 
 
 Qes3(Q3);
 
 
-var Q4= prompt('What is My Future Goals🤨? Do you think to be a Web Developer 😋? Your Answer must be (yes/no) or(y,n) ');
+var Q4 = prompt('What is My Future Goals🤨? Do you think to be a Web Developer 😋? Your Answer must be (yes/no) or(y,n) ');
 
 Qes4(Q4);
 
-var Q5= prompt('Do You think that a writing is one of my hobbies? Your Answer must be (yes/no) or(y,n) ');
+var Q5 = prompt('Do You think that a writing is one of my hobbies? Your Answer must be (yes/no) or(y,n) ');
 
 Qes5(Q5);
 
 
-var Q6= prompt('What is my favourite teacher in ASAC 😍😍? Do you think my favorite teacher is Mais Abdalrazeq!!consider it a bonus question, the answer is yes 😎😎😎 , but Your Answer must be (yes/no) or(y,n)😂 ');
+var Q6 = prompt('What is my favourite teacher in ASAC 😍😍? Do you think my favorite teacher is Mais Abdalrazeq!!consider it a bonus question, the answer is yes 😎😎😎 , but Your Answer must be (yes/no) or(y,n)😂 ');
 
 Qes6(Q6);
 
-var Q7= prompt('Do you think my website is need to update ⌨ ? Your Answer must be (yes/no) or(y,n) ');
+var Q7 = prompt('Do you think my website is need to update ⌨ ? Your Answer must be (yes/no) or(y,n) ');
 
 Qes7(Q7);
+
+Qes8();
 
 if (count < 4)
   alert(`Thanks ${userName} for play with us , You was a great person and  you got ${count}/7 hope see you again `);
@@ -69,14 +71,14 @@ function Qes1(Q1) {
 // next
 
 function Qes2(Q2) {
-  if (Q2.toLowerCase() === 'yes'|| Q2.toLowerCase() === 'y' ) {
+  if (Q2.toLowerCase() === 'yes' || Q2.toLowerCase() === 'y') {
 
     alert('Your Anwer is  Correct 😉');
 
     console.log('Your Anwer in question (2) is  Correct ');
     count++;
   }
-  else if (Q2.toLowerCase() === 'no' || Q2.toLowerCase() === 'n' ) {
+  else if (Q2.toLowerCase() === 'no' || Q2.toLowerCase() === 'n') {
     alert('Your Anwer is not Correct , Try again 😎');
   }
   else {
@@ -115,10 +117,12 @@ function Qes4(Q4) {
   else if (Q4.toLowerCase() === 'no' || Q4.toLowerCase() === 'n') {
 
     alert('Your Anwer is not Correct ');
-  }else {
+  } else {
     alert('Your Answer must be (yes/no) or(y,n) ');
   }
 }
+
+// next
 
 function Qes5(Q5) {
 
@@ -130,10 +134,12 @@ function Qes5(Q5) {
   else if (Q5.toLowerCase() === 'no' || Q5.toLowerCase() === 'n') {
 
     alert('Your Anwer is not Correct ');
-  }else {
+  } else {
     alert('Your Answer must be (yes/no) or(y,n) ');
   }
 }
+
+// next
 
 function Qes6(Q6) {
 
@@ -145,22 +151,62 @@ function Qes6(Q6) {
   else if (Q6.toLowerCase() === 'no' || Q6.toLowerCase() === 'n') {
 
     alert('Your Anwer is not Correct ');
-  }else {
+  } else {
     alert('Your Answer must be (yes/no) or(y,n) ');
   }
 }
+
+// next
 
 function Qes7(Q7) {
 
   if (Q7.toLowerCase() === 'yes' || Q7.toLowerCase() === 'y') {
     alert('Your Anwer is Correct  😎');
-    console.log('Your Anwer in question (7) is  Correct , we finished 😋');
+    console.log('Your Anwer in question (7) is  Correct ');
     count++;
   }
   else if (Q7.toLowerCase() === 'no' || Q7.toLowerCase() === 'n') {
 
     alert('Your Anwer is not Correct ');
-  }else {
+  } else {
     alert('Your Answer must be (yes/no) or(y,n) ');
   }
+}
+
+// next
+
+function Qes8() {
+  var Q8Ans;
+  var Levels = ['code101', 'code102', 'code201', 'code301'];
+  var correct = false;
+  var k = 0;
+
+  while (k < 6) {
+
+    console.log(k, 'attempt');
+
+    Q8Ans = prompt('What are the Levels that I took in the Web Development Course ,you have 6 attempts to guess the correct answer\n Hint: The answer include the name of code 🙄 ');
+
+    for (var j = 0; j < Levels.length; j++) {
+
+
+      if (Q8Ans.toLowerCase() === Levels[j]) {
+
+        alert(` Very Good 😉. This is a Correct Answer,See all correct answers about my levels \n ('  ${Levels} ') .`);
+        console.log('Your Anwer in question (8) is  Correct , we finished 😋');
+        correct = true;
+        count++;
+        break;
+      }
+    }
+    if (correct)
+      break;
+
+
+    alert('Wrong Answer ⁉, ' + (5 - k) + ' Attempt remain');
+    k++;
+  }
+
+  if (!correct)
+    alert(`you didn't guess,the correct answer its any one code of this list\n (' ${Levels} ') ,hope see you again `);
 }
