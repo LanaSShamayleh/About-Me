@@ -49,6 +49,7 @@ else if (q2.toLowerCase() === 'no' || q2.toLowerCase() === 'n') {
 else {
   alert('Your Answer must be (yes/no) or(y,n) ');
 }
+}
 qes(q2);
 
 
@@ -88,6 +89,7 @@ else if (q4.toLowerCase() === 'no' || q4.toLowerCase() === 'n') {
 } else {
   alert('Your Answer must be (yes/no) or(y,n) ');
 }
+}
 qes(q4);
 
 
@@ -112,6 +114,7 @@ else if (q5.toLowerCase() === 'no' || q5.toLowerCase() === 'n') {
 
   alert('Your Answer must be (yes/no) or(y,n) ');
 
+}
 }
 qes(q5);
 
@@ -160,7 +163,7 @@ for (n = 0; n < 4; n++) {
   }
 }
 
-next
+// next
 
   var q7Ans;
   var levels = ['code101', 'code102', 'code201', 'code301'];
@@ -184,49 +187,12 @@ next
   }if (!correct)
     alert(`you didn't guess,the correct answer its any one code of this list\n (' ${levels} ') ,hope see you again `);
 
+ 
 
-// var levels = ['code101', 'code102', 'code201', 'code301'];
-
-// // console.log(k, 'attempt');
-// var q7Ans;
-// var correct = false;
-
-
-// let k 
-// while (k < 6) {
-//   q7Ans = prompt('What are the Levels that I took in the Web Development Course ,you have 6 attempts to guess the correct answer\n Hint: The answer include the name of code 🙄 ');
-
-//   for (var j = 0; j < levels.length; j++) {
-
-
-//     if (q7Ans.toLowerCase() === levels[j]) {
-
-//       alert(` Very Good. This is a Correct Answer,See all correct answers about my levels \n ('  ${levels} ') .`);
-//       // console.log('Your Anwer in question (7) is  Correct, we finished ');
-//       correct = true;
-//       count++;
-//       break;
-//     }
-
-//     if (correct) {
-//       alert('Wrong Answer, ' + (5 - k) + ' Attempt remain');
-//       k++;
-//       // break;
-//     }
-    
-//   if (!correct) {
-//     alert(`you didn't guess,the correct answer its any one code of this list\n (' ${levels} ') ,hope see you again `);
-//   }
-
-  
-
-// if (count < 4) {
-//   alert(`Thanks ${userName} for play with us , You was a great person and  you got ${count}/7 hope see you again `);
-// }
-// else { 
-//   alert(`Thanks${userName} for play with us , You was a great person and you got ${count}/7, Congrats `);
-// }
-//   }
-
-
-// }
+if (count < 4) {
+  alert(`Thanks ${userName} for play with us , You was a great person and  you got ${count}/7 hope see you again `);
+}
+else { 
+  alert(`Thanks${userName} for play with us , You was a great person and you got ${count}/7, Congrats `);
+}
+ 
