@@ -175,6 +175,8 @@ var q7Ans;
 var levels = ['code101', 'code102', 'code201', 'code301'];
 var correct = false;
 var k = 0;
+function qes7() {
+
 while (k < 6) {
   //console.log(k, 'attempt');
   q7Ans = prompt('What are the Levels that I took in the Web Development Course ,you have 6 attempts to guess the correct answer\n Hint: The answer include the name of code ');
@@ -192,7 +194,8 @@ while (k < 6) {
   k++;
 } if (!correct)
   alert(`you didn't guess,the correct answer its any one code of this list\n (' ${levels} ') ,hope see you again `);
-
+}
+qes7();
 
 
 if (count < 4) {
