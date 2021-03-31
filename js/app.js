@@ -94,6 +94,7 @@ qes(q4);
 //next
 
 var q5 = prompt('Do You think that a writing is one of my hobbies? Your Answer must be (yes/no) or(y,n) ');
+function qes(q5){
 
 if (q5.toLowerCase() === 'yes' || q5.toLowerCase() === 'y') {
 
@@ -112,6 +113,8 @@ else if (q5.toLowerCase() === 'no' || q5.toLowerCase() === 'n') {
   alert('Your Answer must be (yes/no) or(y,n) ');
 
 }
+qes(q5);
+
 
 //next
 
