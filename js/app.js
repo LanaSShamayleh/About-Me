@@ -7,55 +7,11 @@
 
 var userName = prompt('Hey😉 What is your name ?');
 
+let count = 0;
+let answer;
 alert('Welcome ' + userName + ' .This is My website 🙈 ,Lets we play a small game before to see this page!');
 
-let count = 0;
-
-var Q1 = prompt('Are my age is 24 years old? Your Answer must be (yes/no) or(y,n) ');
-
-Qes1(Q1);
-
-var Q2 = prompt(' What is my major🤨? Do you think it is the communication engineer 😋?Your Answer must be (yes/no) or(y,n) ');
-
-Qes2(Q2);
-
-
-var Q3 = prompt(' Do you think the winter is my season 🌨 ?Your Answer must be (yes/no) or(y,n) ');
-
-
-Qes3(Q3);
-
-
-var Q4 = prompt('What is My Future Goals🤨? Do you think to be a Web Developer 😋? Your Answer must be (yes/no) or(y,n) ');
-
-Qes4(Q4);
-
-var Q5 = prompt('Do You think that a writing is one of my hobbies? Your Answer must be (yes/no) or(y,n) ');
-
-Qes5(Q5);
-
-
-var Q6 = prompt('What is my teacher in ASAC 😍😍? Do you think my teacher is Mais Abdalrazeq !! haha consider it as a bonus question,so the answer is yes 😎😎😎 , but your Answer must be (yes/no) or(y,n)😂 ');
-
-Qes6(Q6);
-
-var Q7 = prompt('Do you think my website is need to update ⌨ ? Your Answer must be (yes/no) or(y,n) ');
-
-Qes7(Q7);
-
-Qes8();
-
-Qes9();
-
-
-if (count < 5)
-  alert(`Thanks ${userName} for play with us , You was a great person and  you got ${count}/9 hope see you again `);
-else
-  alert(`Thanks${userName} for play with us , You was a great person and you got ${count}/9, Congrats 😉`);
-
-
-//next part
-
+// First Function
 function Qes1(Q1) {
 
   if (Q1.toLowerCase() === 'yes' || Q1.toLowerCase() === 'y') {
@@ -73,7 +29,7 @@ function Qes1(Q1) {
     alert('Your Answer must be (yes/no) or(y,n)');
   }
 }
-// next
+// next function
 
 function Qes2(Q2) {
   if (Q2.toLowerCase() === 'yes' || Q2.toLowerCase() === 'y') {
@@ -91,7 +47,7 @@ function Qes2(Q2) {
   }
 }
 
-// next
+// next function
 
 function Qes3(Q3) {
   if (Q3.toLowerCase() === 'yes' || Q3.toLowerCase() === 'y') {
@@ -110,7 +66,7 @@ function Qes3(Q3) {
   }
 }
 
-// next
+// next function
 
 function Qes4(Q4) {
 
@@ -127,7 +83,7 @@ function Qes4(Q4) {
   }
 }
 
-// next
+// next function
 
 function Qes5(Q5) {
 
@@ -144,44 +100,55 @@ function Qes5(Q5) {
   }
 }
 
-// next
+// next function
 
-function Qes6(Q6) {
+function Qes6() {
 
-  if (Q6.toLowerCase() === 'yes' || Q6.toLowerCase() === 'y') {
-    alert('Your Anwer is Correct  😎');
-    console.log('Your Anwer in question (6) is  Correct ');
-    count++;
-  }
-  else if (Q6.toLowerCase() === 'no' || Q6.toLowerCase() === 'n') {
+  var Array = ['try to guess my lucky number ( 1 and 10 )', 'If i would to change one my hobbies, which one would i change it?'];
 
-    alert('Your Anwer is not Correct ');
-  } else {
-    alert('Your Answer must be (yes/no) or(y,n) ');
+  let n;
+  for (n = 0; n < 4; n++) {
+
+    answer = prompt('Hey' + userName + '! this is the last question,so ' + Array[0] + '.Note you have only ' + (4 - n) + 'attempts! ');
+    switch (answer) {
+    case '1':
+    case '2':
+    case '3':
+    case '4':
+
+      alert('lessly close to reaching !');
+      break;
+
+    case '5':
+    case '9':
+    case '10':
+
+      alert('highly close to reaching!');
+      break;
+
+    case '6':
+    case '8':
+
+      alert('hmmmmm try to pick in between 😋!');
+
+      break;
+
+    case '7':
+      count++;
+      console.log('Your Anwer in question (9) is  Correct , we finished 😋');
+      n = 5;
+      break;
+    default:
+      alert('Please pick a number from the range ( 1 to 10 ) only');
+
+    }
   }
 }
 
-// next
+// next function
 
-function Qes7(Q7) {
-
-  if (Q7.toLowerCase() === 'yes' || Q7.toLowerCase() === 'y') {
-    alert('Your Anwer is Correct  😎');
-    console.log('Your Anwer in question (7) is  Correct ');
-    count++;
-  }
-  else if (Q7.toLowerCase() === 'no' || Q7.toLowerCase() === 'n') {
-
-    alert('Your Anwer is not Correct ');
-  } else {
-    alert('Your Answer must be (yes/no) or(y,n) ');
-  }
-}
-
-// next
-
-function Qes8() {
-  var Q8Ans;
+function Qes7() {
+  var Q7Ans;
   var Levels = ['code101', 'code102', 'code201', 'code301'];
   var correct = false;
   var k = 0;
@@ -190,12 +157,12 @@ function Qes8() {
 
     console.log(k, 'attempt');
 
-    Q8Ans = prompt('What are the Levels that I took in the Web Development Course ,you have 6 attempts to guess the correct answer\n Hint: The answer include the name of code 🙄 ');
+    Q7Ans = prompt('What are the Levels that I took in the Web Development Course ,you have 6 attempts to guess the correct answer\n Hint: The answer include the name of code 🙄 ');
 
     for (var j = 0; j < Levels.length; j++) {
 
 
-      if (Q8Ans.toLowerCase() === Levels[j]) {
+      if (Q7Ans.toLowerCase() === Levels[j]) {
 
         alert(` Very Good 😉. This is a Correct Answer,See all correct answers about my levels \n ('  ${Levels} ') .`);
         console.log('Your Anwer in question (8) is  Correct ');
@@ -216,47 +183,30 @@ function Qes8() {
     alert(`you didn't guess,the correct answer its any one code of this list\n (' ${Levels} ') ,hope see you again `);
 }
 
-// next
+//  Second part - Prompt and Calling
 
+var Q1 = prompt('Are my age is 24 years old? Your Answer must be (yes/no) or(y,n) ');
+Qes1(Q1);
 
-function Qes9() {
+var Q2 = prompt(' What is my major🤨? Do you think it is the communication engineer 😋?Your Answer must be (yes/no) or(y,n) ');
+Qes2(Q2);
 
-  var Array = ['try to guess my lucky number ( 1 and 10 )', 'If i would to change one my hobbies, which one would i change it?'];
+var Q3 = prompt(' Do you think the winter is my season 🌨 ?Your Answer must be (yes/no) or(y,n) ');
+Qes3(Q3);
 
-  let n;
-  let answer;
-  for (n = 0; n < 6; n++) {
+var Q4 = prompt('What is My Future Goals🤨? Do you think to be a Web Developer 😋? Your Answer must be (yes/no) or(y,n) ');
+Qes4(Q4);
 
-    answer = prompt('Hey' + userName + '! this is the last question,so ' + Array[0] + '.Note you have only 6 attempts! ');
-    switch (answer) {
-    case '1':
-    case '2':
-    case '3':
-    case '4':
-      alert('too low!');
-      break;
+var Q5 = prompt('Do You think that a writing is one of my hobbies? Your Answer must be (yes/no) or(y,n) ');
+Qes5(Q5);
 
-    case '5':
-    case '9':
-    case '10':
+Qes6();
 
-      alert('too close!');
-      break;
+Qes7();
 
-    case '6':
-    case '8':
-      alert('hmmmmm in between 😋!');
-      break;
-
-    case '7':
-      count++;
-      console.log('Your Anwer in question (9) is  Correct , we finished 😋');
-      n = 7;
-      break;
-    default:
-      alert('Please pick a number from the range ( 1 to 10 ) only');
-    }
-
-  }
+if (count < 4) {
+  alert(`Thanks ${userName} for play with us , You was a great person and  you got ${count}/7 hope see you again `);
+} else {
+  alert(`Thanks${userName} for play with us , You was a great person and you got ${count}/7, Congrats 😉`);
 }
 
