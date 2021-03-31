@@ -1,26 +1,17 @@
 'use strict';
 
 let userName = prompt('Hey,What is your name ?');
-
-var correct = false;
-
-var q7Ans;
-
 let count = 0;
-
 let answer;
-
-let n;
-
-var k = 0;
-
 alert('Welcome ' + userName + ' .This is My website ,Lets we play a small game before to see this page!');
+
 
 // first
 
+
 var q1 = prompt('Are my age is 24 years old? Your Answer must be (yes/no) or(y,n) ');
 
-q1 = q1.toLowerCase();
+function qes(q1){
 
 if (q1.toLowerCase() === 'yes' || q1.toLowerCase() === 'y') {
   alert('Your Anwer is Correct');
@@ -37,10 +28,11 @@ else {
   alert('Your Answer must be (yes/no) or(y,n)');
 }
 
+}
+qes(q1);
 
 // second
 var q2 = prompt(' What is my major? Do you think it is the communication engineer?Your Answer must be (yes/no) or(y,n) ');
-q2 = q2.toLowerCase();
 
 if (q2.toLowerCase() === 'yes' || q2.toLowerCase() === 'y') {
 
@@ -57,7 +49,6 @@ else {
 }
 
 var q3 = prompt(' Do you think the winter is my season 🌨 ?Your Answer must be (yes/no) or(y,n) ');
-q3 = q3.toLowerCase();
 
 if (q3.toLowerCase() === 'yes' || q3.toLowerCase() === 'y') {
 
@@ -76,7 +67,6 @@ else {
 
 //next
 var q4 = prompt('What is My Future Goals? Do you think to be a Web Developer? Your Answer must be (yes/no) or(y,n) ');
-q4 = q4.toLowerCase();
 
 if (q4.toLowerCase() === 'yes' || q4.toLowerCase() === 'y') {
   alert('Your Anwer is Correct');
@@ -93,8 +83,6 @@ else if (q4.toLowerCase() === 'no' || q4.toLowerCase() === 'n') {
 //next
 
 var q5 = prompt('Do You think that a writing is one of my hobbies? Your Answer must be (yes/no) or(y,n) ');
-q5 = q5.toLowerCase();
-
 
 if (q5.toLowerCase() === 'yes' || q5.toLowerCase() === 'y') {
 
@@ -117,7 +105,8 @@ else if (q5.toLowerCase() === 'no' || q5.toLowerCase() === 'n') {
 //next
 
 var array = ['try to guess my lucky number ( 1 and 10 )', 'If i would to change one my hobbies, which one would i change it?'];
-
+let n;
+var k = 0;
 for (n = 0; n < 4; n++) {
 
   answer = prompt('Hey' + userName + '! this is the last question,so ' + array[0] + '.Note you have only ' + (4 - n) + 'attempts! ');
@@ -157,44 +146,73 @@ for (n = 0; n < 4; n++) {
   }
 }
 
-//next
+next
 
-var levels = ['code101', 'code102', 'code201', 'code301'];
-
-console.log(k, 'attempt');
-
-q7Ans = prompt('What are the Levels that I took in the Web Development Course ,you have 6 attempts to guess the correct answer\n Hint: The answer include the name of code 🙄 ');
-
-while (k > 0) {
-
-  for (var j = 0; j < levels.length; j++) {
-
-
-    if (q7Ans.toLowerCase() === levels[j]) {
-
-      alert(` Very Good. This is a Correct Answer,See all correct answers about my levels \n ('  ${levels} ') .`);
-      console.log('Your Anwer in question (7) is  Correct, we finished ');
-      correct = true;
-      count++;
+  var q7Ans;
+  var levels = ['code101', 'code102', 'code201', 'code301'];
+  var correct = false;
+  var k = 0;
+  while (k < 6) {
+    //console.log(k, 'attempt');
+    q7Ans = prompt('What are the Levels that I took in the Web Development Course ,you have 6 attempts to guess the correct answer\n Hint: The answer include the name of code ');
+    for (var j = 0; j < levels.length; j++) {
+      if (q7Ans.toLowerCase() === levels[j]) {
+        alert(` Very Good. This is a Correct Answer,See all correct answers about my levels \n ('  ${levels} ') .`);
+        //console.log('Your Anwer in question (7) is  Correct, we finished ');
+        correct = true;
+        count++;
+        break;
+      }
+    }if (correct)
       break;
-    }
-  } if (correct)
-
-    break;
-
-  alert('Wrong Answer, ' + (5 - k) + ' Attempt remain');
-  k++;
-}
-
-if (!correct){
-  alert(`you didn't guess,the correct answer its any one code of this list\n (' ${levels} ') ,hope see you again `);
-}
+    alert('Wrong Answer, ' + (5 - k) + ' Attempt remain');
+    k++;
+  }if (!correct)
+    alert(`you didn't guess,the correct answer its any one code of this list\n (' ${levels} ') ,hope see you again `);
 
 
+// var levels = ['code101', 'code102', 'code201', 'code301'];
 
-if (count < 4) {
-  alert(`Thanks ${userName} for play with us , You was a great person and  you got ${count}/7 hope see you again `);
-}
-else {
-  alert(`Thanks${userName} for play with us , You was a great person and you got ${count}/7, Congrats `);
-}
+// // console.log(k, 'attempt');
+// var q7Ans;
+// var correct = false;
+
+
+// let k 
+// while (k < 6) {
+//   q7Ans = prompt('What are the Levels that I took in the Web Development Course ,you have 6 attempts to guess the correct answer\n Hint: The answer include the name of code 🙄 ');
+
+//   for (var j = 0; j < levels.length; j++) {
+
+
+//     if (q7Ans.toLowerCase() === levels[j]) {
+
+//       alert(` Very Good. This is a Correct Answer,See all correct answers about my levels \n ('  ${levels} ') .`);
+//       // console.log('Your Anwer in question (7) is  Correct, we finished ');
+//       correct = true;
+//       count++;
+//       break;
+//     }
+
+//     if (correct) {
+//       alert('Wrong Answer, ' + (5 - k) + ' Attempt remain');
+//       k++;
+//       // break;
+//     }
+    
+//   if (!correct) {
+//     alert(`you didn't guess,the correct answer its any one code of this list\n (' ${levels} ') ,hope see you again `);
+//   }
+
+  
+
+// if (count < 4) {
+//   alert(`Thanks ${userName} for play with us , You was a great person and  you got ${count}/7 hope see you again `);
+// }
+// else { 
+//   alert(`Thanks${userName} for play with us , You was a great person and you got ${count}/7, Congrats `);
+// }
+//   }
+
+
+// }
