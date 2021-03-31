@@ -1,35 +1,35 @@
-// 'use strict';
+'use strict';
 
-// let userName = prompt('Hey,What is your name ?');
-// let count = 0;
-// let answer;
-// alert('Welcome ' + userName + ' .This is My website ,Lets we play a small game before to see this page!');
-
-
-// // first
+let userName = prompt('Hey,What is your name ?');
+let count = 0;
+let answer;
+alert('Welcome ' + userName + ' .This is My website ,Lets we play a small game before to see this page!');
 
 
-// var q1 = prompt('Are my age is 24 years old? Your Answer must be (yes/no) or(y,n) ');
+// first
 
-// function qes(q1){
 
-// if (q1.toLowerCase() === 'yes' || q1.toLowerCase() === 'y') {
-//   alert('Your Anwer is Correct');
+var q1 = prompt('Are my age is 24 years old? Your Answer must be (yes/no) or(y,n) ');
 
-//   console.log('Your Anwer in question (1) is  Correct ');
+function qes(q1){
 
-//   count++;
-// }
-// else if (q1.toLowerCase() === 'no' || q1.toLowerCase() === 'n') {
-//   alert('Your Anwer is not Correct');
+if (q1.toLowerCase() === 'yes' || q1.toLowerCase() === 'y') {
+  alert('Your Anwer is Correct');
 
-// }
-// else {
-//   alert('Your Answer must be (yes/no) or(y,n)');
-// }
+  console.log('Your Anwer in question (1) is  Correct ');
 
-// }
-// qes(q1);
+  count++;
+}
+else if (q1.toLowerCase() === 'no' || q1.toLowerCase() === 'n') {
+  alert('Your Anwer is not Correct');
+
+}
+else {
+  alert('Your Answer must be (yes/no) or(y,n)');
+}
+
+}
+qes(q1);
 
 // second
 
@@ -49,8 +49,11 @@ else if (q2.toLowerCase() === 'no' || q2.toLowerCase() === 'n') {
 else {
   alert('Your Answer must be (yes/no) or(y,n) ');
 }
+qes(q2);
+
 
 var q3 = prompt(' Do you think the winter is my season 🌨 ?Your Answer must be (yes/no) or(y,n) ');
+function qes(q3){
 
 if (q3.toLowerCase() === 'yes' || q3.toLowerCase() === 'y') {
 
@@ -67,7 +70,7 @@ else {
   alert('Your Answer must be (yes/no) or(y,n)  ');
 }
 }
-qes(q2);
+qes(q3);
 
 //next
 
