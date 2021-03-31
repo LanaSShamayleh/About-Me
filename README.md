@@ -70,7 +70,9 @@ Trying to debug .
 The pull requests went really smooth.
 
 - Anything else you'd like to share?
+
 The pair programming was an interesting concept which was a practice in patience for both of us to do not get ahead of the navigator while driving but we found a good rhythm by the end .
 
 - How long did it take you to complete this assignment? And, before you started, how long did you think it would take you to complete this assignment?
+
 I felt like navigating through my code would go quickly, which was fair and went about as long as I anticipated. I had no litmus for how long my partners code would take but we were able to go all the way through, debug all questions and PR through the assignment in a couple hours .
