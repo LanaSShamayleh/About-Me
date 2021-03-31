@@ -39,6 +39,7 @@ In ***Pair Programming***. we assigned to work with a partner, and the two of us
 ### Links and Resources
 
 - [Submission's Repository](https://github.com/LanaSShamayleh/About-Me.git)
+- [The Link For Forked Code](https://github.com/hibasalem/About-me)
 
 ### Reflections and Comments
 
