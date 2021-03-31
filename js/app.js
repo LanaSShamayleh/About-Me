@@ -75,6 +75,7 @@ qes(q3);
 //next
 
 var q4 = prompt('What is My Future Goals? Do you think to be a Web Developer? Your Answer must be (yes/no) or(y,n) ');
+function qes(q4){
 
 if (q4.toLowerCase() === 'yes' || q4.toLowerCase() === 'y') {
   alert('Your Anwer is Correct');
@@ -87,6 +88,8 @@ else if (q4.toLowerCase() === 'no' || q4.toLowerCase() === 'n') {
 } else {
   alert('Your Answer must be (yes/no) or(y,n) ');
 }
+qes(q4);
+
 
 //next
 
