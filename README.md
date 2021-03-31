@@ -1,4 +1,4 @@
-# Lab: 02
+# Lab-02
 
 ## About Me, with a Guessing-Game
 
@@ -19,12 +19,12 @@ Building out an **About Me** webpage that quizzes the user on fun facts gives th
 
 **Feature Tasks :**
 
-- create a top ten list that related to my hobbies and a type of the list is an ordered list .
-- adding work experience and education sections as list unorder list .
+- Create a top ten list that related to my hobbies and a type of the list is an order list .
+- Adding work experience and education sections as an unorder list .
 - Adding Two question 6th and 7th and score counter.
-- applying some css style and js statements.
+- Applying some CSS style and JS statements.
 
-## **Author:Lana Salah Shamayleh**
+## **Author: Lana Salah Shamayleh**
 
 ## Links and Resources
 
