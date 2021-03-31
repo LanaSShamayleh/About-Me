@@ -24,14 +24,53 @@ Building out an **About Me** webpage that quizzes the user on fun facts gives th
 - Adding Two question 6th and 7th and score counter.
 - Applying some CSS style and JS statements.
 
-## **Author: Lana Salah Shamayleh**
+## Lab-04
 
-## Links and Resources
+In ***Pair Programming***. we assigned to work with a partner, and the two of us worked on and extended each other's **About Me , with a Guessing Game Projects** by following the specific instructions .
+
+## The name Of driver and navigator
+
+- `Driver` : Lana Salah Shamayleh
+
+- `Navigator` : TD
+
+## Author: Lana Salah Shamayleh
+
+### Links and Resources
 
 - [Submission's Repository](https://github.com/LanaSShamayleh/About-Me.git)
+- [The Link For Forked Code](https://github.com/LanaSShamayleh/About-Me.git)
 
-## Reflections and Comments
+### Reflections and Comments
 
-- I added 7 questions to the guessing game.
+>Comments that give an overview of the project's working mechanism:
+
+- I added 7 questions to the guessing game and the Js control flow instructions enabled to organize these
+  follow-up of questions in a beautiful and encouraging manner .
+
 - Each correct answer is granted 1 points score, so the total out of 7.
+
 - There are **4** attempts to question 6 for answer correctly and **6** attempts for question 7.
+
+>The questions that highly explain the steps of project working :
+
+- How did the pair programming process go in general?
+
+The process went really well. We started with my code which I believe was helpful to the whole process because it was running fairly well and prepared to be wrapped in functions.
+
+- Did you learn anything from your partner? If so, what?
+
+Yes,I did . I learned from my partner a new idea to make the guessing game is more exciting by using ...
+
+- What was the most difficult part of the assignment today?
+
+Trying to debug .
+
+- What was the easiest part of the assignment today?
+
+The pull requests went really smooth.
+
+- Anything else you'd like to share?
+The pair programming was an interesting concept which was a practice in patience for both of us to do not get ahead of the navigator while driving but we found a good rhythm by the end .
+
+- How long did it take you to complete this assignment? And, before you started, how long did you think it would take you to complete this assignment?
