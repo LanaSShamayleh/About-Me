@@ -30,7 +30,7 @@ In ***Pair Programming***. we assigned to work with a partner, and the two of us
 
 ## The name Of driver and navigator
 
-- `Driver` : Lana Salah Shamayleh
+- `Driver` : TD
 
 - `Navigator` : TD
 
@@ -39,7 +39,6 @@ In ***Pair Programming***. we assigned to work with a partner, and the two of us
 ### Links and Resources
 
 - [Submission's Repository](https://github.com/LanaSShamayleh/About-Me.git)
-- [The Link For Forked Code](https://github.com/LanaSShamayleh/About-Me.git)
 
 ### Reflections and Comments
 
