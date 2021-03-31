@@ -15,7 +15,7 @@ Building out an **About Me** webpage that quizzes the user on fun facts gives th
 
 ## Lab-03
 
-## Extend your **About Me** and Guessing-Game
+## Extend your **About Me**, with a Guessing-Game
 
 **Feature Tasks :**
 
@@ -34,3 +34,4 @@ Building out an **About Me** webpage that quizzes the user on fun facts gives th
 
 - I added 7 questions to the guessing game.
 - Each correct answer is granted 1 points score, so the total out of 7.
+- There are **4** attempts to question 6 for answer correctly and **6** attempts for question 7.
